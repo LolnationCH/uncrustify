@@ -3931,7 +3931,7 @@ static void indent_comment(chunk_t *pc, size_t col)
    {
       LOG_FMT(LCMTIND, "%s(%d): rule 4 - single line comment indent, now in %zu\n",
               __func__, __LINE__, pc->column);
-      reindent_line(pc, col + options::indent_sing_line_comments());
+      reindent_line(pc, (options::indent_relative_single_line_comments()? col : 0) + options::indent_sing_line_comments());
       return;
    }
    LOG_FMT(LCMTIND, "%s(%d): rule 5 - fall-through, stay in %zu\n",

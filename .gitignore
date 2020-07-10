@@ -56,3 +56,6 @@ xcuserdata
 # CLion
 .idea/
 cmake-build-*/
+/out/build
+/.vs
+/CMakeSettings.json

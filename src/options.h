@@ -1384,7 +1384,7 @@ extern Option<bool>
 indent_member_single;
 
 // Spaces to indent single line ('//') comments on lines before code.
-extern BoundedOption<unsigned, 0, 16>
+extern BoundedOption<unsigned, 0, 30>
 indent_sing_line_comments;
 
 // When opening a paren for a control statement (if, for, while, etc), increase
